@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <script type="application/javascript">
+            function toggleDescriptionById(id) {
+                let elem = document.getElementById(id)
+                elem.style.opacity = 1 - elem.style.opacity
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>FAC Application Projects Gallery</h1>
+        </header>
+        <ul>
+            <li class="card" style="background-image: url('./images/CAKE.jpeg')" alt="A delicious cake.">
+                <p class="cardTitle">Big Sam's Cakes</p>
+                <a class="link" href="https://scudmarx.github.io/FAC-app-1">&#8618;</a>
+                <a class="info" onclick="toggleDescriptionById('desc1')">?</a>
+                <p class="cardDescription" id="desc1">Hobby Project</p>
+            </li>
+            <li class="card" style="background-image: url('./images/ALSOCAKE.jpeg')" alt="A delicious cake.">
+                <p class="cardTitle">Here</p>
+                <a class="link" href="https://scudmarx.github.io/FAC-App-2">&#8618;</a>
+                <a class="info" onclick="toggleDescriptionById('desc2')">?</a>
+                <p class="cardDescription" id="desc2">Projects Gallery</p>
+            </li>
+            <li class="card" style="background-image: url('./images/ALSOCAKE.jpeg')" alt="A delicious cake.">
+                <p class="cardTitle">Me</p>
+                <a class="link" href="https://scudmarx.github.io/FAC-App-3">&#8618;</a>
+                <a class="info" onclick="toggleDescriptionById('desc3')">?</a>
+                <p class="cardDescription" id="desc3">Me</p>
+            </li>
+            <li class="card" style="background-image: url('./images/ALSOCAKE.jpeg')" alt="A delicious cake.">
+                <p class="cardTitle">Website</p>
+                <a class="link" href="https://scudmarx.github.io/FAC-App-4">&#8618;</a>
+                <a class="info" onclick="toggleDescriptionById('desc4')">?</a>
+                <p class="cardDescription" id="desc4">Website</p>
+            </li>
+            <li class="card" style="background-image: url('./images/ALSOCAKE.jpeg')" alt="A delicious cake.">
+                <p class="cardTitle">Game</p>
+                <a class="link" href="https://scudmarx.github.io/FAC-App-5">&#8618;</a>
+                <a class="info" onclick="toggleDescriptionById('desc5')">?</a>
+                <p class="cardDescription" id="desc5">Game</p>
+            </li>
+        </ul>
+        <footer>
+            <p>by Sam Duncombe</p>
+        </footer>
+    </body>
+</html>
